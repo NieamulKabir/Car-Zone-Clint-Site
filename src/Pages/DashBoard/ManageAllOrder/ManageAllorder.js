@@ -8,7 +8,7 @@ const ManageAllorder = () => {
     const [allOrder, setAllOrder] = useState([]);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/order`)
+        fetch(`https://frozen-escarpment-04768.herokuapp.com/order`)
             .then(res => res.json())
             .then(data => setAllOrder(data));
     }, [])
@@ -24,13 +24,13 @@ const ManageAllorder = () => {
 
 
                                 <Grid item xs={6} sm={6} md={6}>
-                                    <Card sx={{border: 0, boxShadow: 4, }}>
+                                    <Card sx={{ border: 0, boxShadow: 4, }}>
                                         <CardContent>
                                             <Typography variant="h4" component="div">
                                                 {all?.email}
                                             </Typography>
                                             <Typography variant="h6" component="div">
-                                              Car Name : {all?.title}
+                                                Car Name : {all?.title}
                                             </Typography>
 
                                         </CardContent>

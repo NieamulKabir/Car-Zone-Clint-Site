@@ -16,7 +16,7 @@ const Purchase = ({ service }) => {
     const [placeCarOrder, setPlaceCarOrder] = useState([]);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/car/${purchaseId}`)
+        fetch(`https://frozen-escarpment-04768.herokuapp.com/car/${purchaseId}`)
             .then(res => res.json())
             .then(data => setPlaceCarOrder(data));
     }, [purchaseId])
@@ -26,7 +26,7 @@ const Purchase = ({ service }) => {
         console.log(data);
 
 
-        axios.post(`http://localhost:5000/Order`, data)
+        axios.post(`https://frozen-escarpment-04768.herokuapp.com/Order`, data)
             .then(res => {
                 if (res.data.insertedId) {
                     alert('Added Successfully');

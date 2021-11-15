@@ -18,7 +18,7 @@ const MyOrders = () => {
         // console.log('Myorder');
         let value = user?.email;
         console.log(user?.email);
-        fetch(`http://localhost:5000/Order/${value}`)
+        fetch(`https://frozen-escarpment-04768.herokuapp.com/Order/${value}`)
             .then(res => res.json())
             .then(data => SetMyOrder(data));
     }, [user])
@@ -27,7 +27,7 @@ const MyOrders = () => {
     const handleCancle = id => {
         const proceed = window.confirm('Are You sure ,You wnt To Cancle Your Order?!');
         if (proceed) {
-            const url = `http://localhost:5000/Order/${id}`;
+            const url = `https://frozen-escarpment-04768.herokuapp.com/Order/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })

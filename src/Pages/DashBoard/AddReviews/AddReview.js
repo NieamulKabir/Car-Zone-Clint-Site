@@ -10,7 +10,7 @@ const AddReview = () => {
         console.log(data);
 
 
-        axios.post(`http://localhost:5000/Reviews`, data)
+        axios.post(`https://frozen-escarpment-04768.herokuapp.com/Reviews`, data)
             .then(res => {
                 if (res.data.insertedId) {
                     alert('Added Successfully');

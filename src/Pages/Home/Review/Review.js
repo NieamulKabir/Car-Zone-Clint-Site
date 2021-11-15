@@ -11,7 +11,7 @@ const Review = () => {
     const [reviews, setReviews] = useState([]);
 
     useEffect(() => {
-        fetch("http://localhost:5000/reviews")
+        fetch("https://frozen-escarpment-04768.herokuapp.com/reviews")
             .then(res => res.json())
             .then(data => setReviews(data))
     }, [])
@@ -31,7 +31,7 @@ const Review = () => {
 
                                     <CardContent>
                                         <Typography variant="h5" component="div">
-                                           <h3 className="text-primary"> {rv?.name}</h3>
+                                            <h3 className="text-primary"> {rv?.name}</h3>
                                         </Typography>
                                         <Typography variant="h6" component="div">
                                             {rv?.review}
@@ -39,7 +39,7 @@ const Review = () => {
                                         <br />
                                         <Typography sx={{ textAlign: 'left' }} variant="body" color="black">
                                             <strong><Stack spacing={1}>
-                                            Rating : <Rating name="half-rating" defaultValue={rv?.rating} precision={.5} readOnly />
+                                                Rating : <Rating name="half-rating" defaultValue={rv?.rating} precision={.5} readOnly />
 
                                             </Stack></strong>
                                         </Typography>

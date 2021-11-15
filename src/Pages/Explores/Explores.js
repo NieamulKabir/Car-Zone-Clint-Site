@@ -8,10 +8,10 @@ import "./Explores.css";
 
 
 const Explores = () => {
-    const [explores, setExplores]= useState([]);
+    const [explores, setExplores] = useState([]);
 
     useEffect(() => {
-        fetch("http://localhost:5000/car")
+        fetch("https://frozen-escarpment-04768.herokuapp.com/car")
             .then(res => res.json())
             .then(data => setExplores(data));
     }, [])
@@ -19,20 +19,20 @@ const Explores = () => {
 
     return (
         <Box sx={{ flexGrow: 1 }} >
-        <Container>
-            <Typography className="explores" sx={{ fontWeight: 600, m: 5 }} variant="h4" component="div">
-                Our Services 
-            </Typography>
-            <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
-                {
-                    explores.map(explore => <Explore
-                        key={explore.name}
-                        explore={explore}
-                    ></Explore>)
-                }
-            </Grid>
-        </Container>
-    </Box> 
+            <Container>
+                <Typography className="explores" sx={{ fontWeight: 600, m: 5 }} variant="h4" component="div">
+                    Our Services
+                </Typography>
+                <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
+                    {
+                        explores.map(explore => <Explore
+                            key={explore.name}
+                            explore={explore}
+                        ></Explore>)
+                    }
+                </Grid>
+            </Container>
+        </Box>
     );
 };
 

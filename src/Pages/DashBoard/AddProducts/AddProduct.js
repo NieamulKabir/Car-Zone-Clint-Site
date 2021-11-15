@@ -9,7 +9,7 @@ const AddProduct = () => {
         console.log(data);
 
 
-        axios.post(`http://localhost:5000/car`, data)
+        axios.post(`https://frozen-escarpment-04768.herokuapp.com/car`, data)
             .then(res => {
                 if (res.data.insertedId) {
                     alert('Added Successfully');
@@ -30,7 +30,7 @@ const AddProduct = () => {
 
                 <input className="p-2 m-3" type="number"  {...register("ammount", { required: true })} placeholder="Amount" /> <br />
 
-            
+
 
                 <input className="p-2 m-3" {...register("img", { required: true })} placeholder="img" />
                 <br />
