@@ -1,0 +1,13 @@
+.box{
+    background-color: #4c5f576e;
+    margin-top: 1%;
+    background-image: url('https://wallpaperaccess.com/full/249763.jpg'),
+    
+    linear-gradient(rgba(10, 12, 11, 0.239), rgba(129, 120, 138, 0.5));
+  height: 700px;
+  width: 100%;
+  background-blend-mode:darken,luminosity;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}

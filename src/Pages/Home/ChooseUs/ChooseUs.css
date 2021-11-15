@@ -1,0 +1,37 @@
+.environment{
+    background-color: #4c5f576e;
+    background-image: url('https://c4.wallpaperflare.com/wallpaper/115/912/51/lamborghini-full-hd-desktop-download-wallpaper-preview.jpg'),
+    
+    linear-gradient(rgba(0, 0, 0, 0.965), rgba(36, 35, 37, 0.472));
+  height: 400px;
+  width: 100%;
+  background-blend-mode:darken,luminosity;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.choose{
+    background-color: #1c1f1e6e;
+    background-image: url('https://wallpaperaccess.com/full/1956990.jpg'),
+    
+    linear-gradient(rgba(18, 17, 19, 0.876), rgba(50, 47, 53, 0.589));
+  height: 400px;
+  width: 100%;
+  background-blend-mode:darken,luminosity;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.choose:hover{
+  transform: scale(1.03);
+  transition: transform .7s, opacity .4s;
+  box-shadow: 4px 4px 7px rgba(24, 32, 31, 0.534);
+}
+.environment:hover{
+  transform: scale(1.03);
+  transition: transform .7s, opacity .4s;
+  box-shadow: 4px 4px 7px rgba(12, 15, 15, 0.534);
+}
+
+

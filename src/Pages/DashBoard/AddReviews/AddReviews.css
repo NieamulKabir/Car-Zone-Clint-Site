@@ -1,0 +1,9 @@
+.add{
+    background-color: #111827;
+}
+
+
+form input{    
+    width: 40%;
+    border-radius: 10px;
+}

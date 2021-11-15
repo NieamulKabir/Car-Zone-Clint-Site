@@ -1,0 +1,14 @@
+.footer-container {
+    
+    /* background-color: #1f1a1a2c; */
+    background-image: url('https://volvorepair.com/wp-content/uploads/2012/06/bfc_body_background_footer_MED_LIGHTDRK_skyblue.jpg'),
+    
+    linear-gradient(rgba(10, 10, 10, 0.931), rgba(15, 14, 15, 0.822));
+  height: 400px;
+  width: 100%;
+  background-blend-mode:darken,luminosity;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color:white;
+  }

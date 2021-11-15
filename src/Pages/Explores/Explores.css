@@ -1,0 +1,11 @@
+.explores{
+  background-color: #4c5f576e;
+  background-image: url('https://wallpaperaccess.com/full/249763.jpg'), 
+  linear-gradient(rgba(0, 0, 0, 0.965), rgba(36, 35, 37, 0.472));
+  height: 400px;
+  width: auto;
+  background-blend-mode:darken,luminosity;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
